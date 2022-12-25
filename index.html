@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="font-Hanken">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Parsa Portfolio</title>
+</head>
+<body>
+
+    <!-- nav -->
+    <nav id="nav" class="fixed w-full z-50">
+        <ul class="transition-all duration-300 justify-center py-8 text-white bg-[#27262bd7] personal-blur absolute 
+        -top-96 rounded-lg text-xl left-1/2 -translate-x-1/2 w-3/4 text-center space-y-4 md:w-full md:space-y-0 md:space-x-16 md:flex md:static md:text-base md:translate-x-0 shadow-md">
+            <li class="hover:text-darkYellow"><a href="#header">Home</a></li>
+            <li class="hover:text-darkYellow"><a href="#about-me">About Me</a></li>
+            <li class="hover:text-darkYellow"><a href="#skills">Skills</a></li>
+            <li class="hover:text-darkYellow"><a href="#projects">Projects</a></li>
+            <li class="hover:text-darkYellow"><a href="#contact-me">Contact Me</a></li>
+        </ul>
+
+        <div class="hamburger mt-8 ml-8 md:hidden">
+            <div class="hamburger-top"></div>
+            <div class="hamburger-middle"></div>
+            <div class="hamburger-bottom"></div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header" class="bg-lightBg pb-20 md:pb-0 pt-28 md:pt-32">
+        <div class="container mx-auto relative flex flex-col-reverse items-center justify-center md:flex-row md:space-x-36 lg:space-x-80">
+            <div class=" mt-10 md:mt-0">
+                <p class="text-zinc-300 text-xl">Hello I'm</p>
+                <h1 class="text-darkYellow text-[44px] font-bold my-4 xs:text-5xl">Parsa Esmaeili</h1>
+
+                <p class="text-zinc-500 text-xl">FrontEnd Web Developer</p>
+                <p class="text-zinc-500 text-xl">&copy; Developer</p>
+
+                <button class="btn mt-10"><a href="#contact-me">HIRE ME</a></button>
+            </div>
+
+            <img class="w-[300px] -mt-7 md:mt-0" src="./images/new-img-5.png" alt="">
+        </div>
+    </header>
+
+    <!-- About me -->
+    <section id="about-me" class="bg-darkBg py-16">
+        <div class="container mx-auto">
+            <!-- About me header -->
+            <h1 class="text-center text-zinc-200 font-bold text-3xl">About Me</h1>
+            <div class="w-32 h-0.5 mx-auto bg-darkYellow"></div>
+    
+            <!-- About me main -->
+            <div 
+                class="flex flex-col justify-between items-center font-semibold mt-14 lg:flex-row"
+            >
+                <div class="w-[80%] h-[180px] xs:h-[210px] sm:w-[460px] sm:h-[296px] bg-yellow relative">
+                    <img
+                    class="w-[100%] h-[103%] sm:w-[465px] absolute -right-2 -top-4 bg-lightBg"
+                    src="./images/img-2.png" 
+                    alt=""
+                    >
+                </div>
+
+                <div class="w-3/4 space-y-8 mt-10 text-center lg:space-y-5 lg:text-left lg:w-2/4">
+                    <h3 class="text-zinc-300 font-bold text-2xl">Hello I'm Parsa Esmaeili, I'm a frontend web developer from Shiraz, Iran.</h3>
+                    <p class="text-zinc-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptates in. Nam illo vero temporibus tempore possimus ipsum facere ex dicta, assumenda voluptatibus veniam</p>
+
+                    <div class="flex space-x-6 sm:space-x-14 justify-center lg:justify-start">
+                        <ul class="space-y-2 text-zinc-500">
+                            <li>Name:</li>
+                            <li>Email:</li>
+                            <li>Phone:</li>
+                            <li>Date of birth:</li>
+                            <li>Nationality:</li>
+                        </ul>
+        
+                        <ul class="space-y-2 text-zinc-400">
+                            <li>Parsa Esmaeili</li>
+                            <li>parsaes771385@gmail.com</li>
+                            <li>0901 403 9049</li>
+                            <li>2006/11/11</li>
+                            <li>Iran</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col justify-center space-y-3 space-x-0 sm:space-y-0 sm:space-x-10 sm:flex-row lg:space-x-3 lg:justify-start">
+                        <button class="btn"><a href="#contact-me">HIRE ME</a></button>
+                        <button class="py-2 text-white border border-white rounded-full px-4 hover:text-black hover:bg-white"><a href="">DOWNLOAD CV</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--My Skills -->
+    <section id="skills" class="bg-lightBg py-16">
+        <div class="container mx-auto">
+            <h1 class="text-center text-zinc-200 font-bold text-3xl">My Skills</h1>
+            <div class="w-28 h-0.5 mx-auto bg-darkYellow"></div>
+
+            <div class="mt-14 flex flex-col justify-center px-8 items-center space-y-7 lg:space-y-0 lg:space-x-52 lg:flex-row">
+                <div class="space-y-7 w-full">
+                    <div class="relative">
+                        <h3 class="text-zinc-300 mb-2 inline">HTML</h3>
+                        <i class='bx bxl-html5 text-[#dd4b25]'></i>
+                        <span class="absolute top-0 left-[89%] text-zinc-300">93%</span>
+                        <div class="outer">
+                            <div class="inner w-[93%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <h3 class="text-zinc-300 mb-2 inline">JavaScript</h3>
+                        <i class='bx bxl-javascript text-[#e9d44d]'></i>
+                        <span class="absolute top-0 left-[65%] text-zinc-300">69%</span>
+                        <div class="outer">
+                            <div class="inner w-[69%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <h3 class="text-zinc-300 mb-2 inline">SASS</h3>
+                        <i class='bx bxl-sass text-[#c76494]'></i>
+                        <span class="absolute top-0 left-[83%] text-zinc-300">87%</span>
+                        <div class="outer">
+                            <div class="inner w-[87%]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 w-full">
+                    <div class="relative">
+                        <h3 class="text-zinc-300 mb-2 inline">CSS</h3>
+                        <i class='bx bxl-css3 text-[#254bdd]'></i>
+                        <span class="absolute top-0 left-[86%] text-zinc-300">90%</span>
+                        <div class="outer">
+                            <div class="inner w-[90%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <h3 class="text-zinc-300 mb-2">
+                            Bootstrap
+                            <i class='bx bxl-bootstrap text-[#7811f2]' ></i> / 
+                            Tailwind
+                            <i class='bx bxl-tailwind-css text-[#07b0ce]' ></i></h3>
+                        <span class="absolute top-0 left-[91%] text-zinc-300">95%</span>
+                        <div class="outer">
+                            <div class="inner w-[95%]"></div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <h3 class="text-zinc-300 mb-2">
+                            Git
+                            <i class='bx bxl-git text-[#e94e31]'></i> /
+                            GitHub
+                            <i class='bx bxl-github'></i>
+                            </h3>
+                        <span class="absolute top-0 left-[76%] text-zinc-300">80%</span>
+                        <div class="outer">
+                            <div class="inner w-[80%] bg-black"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Projects -->
+    <section id="projects" class="bg-darkBg py-16 px-6 xs:px-16">
+        <div class="container mx-auto">
+            <h1 class="text-center text-zinc-200 font-bold text-3xl">My Projects</h1>
+            <div class="w-40 h-0.5 mx-auto bg-darkYellow"></div>
+
+            <div class="mt-16 projects">
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/Ecommerce-img.png" alt="">
+
+                    <div class="p-3 pb-5">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Ecommerce website</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS JavaScript and localStorage. you can see product details and add or remove products in your cart and it' full responsive</p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/ecommerce-website" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/ecommerce-product-page-img.jpg" alt="">
+
+                    <div class="p-3 pb-5">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Product Page</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS JavaScript and localStorage. you can see product images and add or remove products in your cart and it' full responsive</p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/product-page" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/zarinpal-clone-img.png" alt="">
+
+                    <div class="p-3 pb-5">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Zarinpal Clone</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS Bootstrap and JavaScript. this zarinpal clone is absolutely looks like the real zarinpal website and it' full responsive</p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/zarinpal" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/oxygen-gym-img.png" alt="">
+
+                    <div class="p-3 pb-5 flex flex-col items-start justify-end">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Oxygen Gym</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS Bootstrap and JavaScript. and it' full responsive</p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/gym-project" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/space-website-img.png" alt="">
+
+                    <div class="p-3 pb-5">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Space Website</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS and JavaScript. and it' full responsive</p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/space-tourism-website" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/calculator-img.jpg" alt="">
+
+                    <div class="p-3 pb-5">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Calculator</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS JavaScript. you can calculate simple math equations and it has 3 theme</p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/calculator" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/tipCalculate-img.jpg" alt="">
+
+                    <div class="p-3 pb-5">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Tip Calculator</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS JavaScript. you can calculate tip and select tip</p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/tip-calculator" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+
+                <div class="bg-[#1c1b1f] rounded-md card-shadow transition hover:-translate-y-1">
+                    <img class="w-full h-40 rounded-t-md" src="./images/todolist-img.jpg" alt="">
+
+                    <div class="p-3 pb-5">
+                        <h1 class="text-zinc-300 text-2xl font-bold">Todo List</h1>
+                        <p class="text-zinc-400 text-sm mt-2 mb-3">in this project i'm using HTML CSS JavaScript. you can add and remove task and it has three category. I have another todo list project and in that project I used localStorage. you can go to my github and see it </p>
+                        <button class="btn px-4 py-1.5 text-sm block"><a href="https://parsaes85.github.io/todo-list" target="_blank">See Project</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-me" class="bg-lightBg py-16 px-6 xs:px-16">
+        <div class="container mx-auto">
+            <h1 class="text-center text-zinc-200 font-bold text-3xl">Contact Me</h1>
+            <div class="w-40 h-0.5 mx-auto bg-darkYellow"></div>
+
+            <div class="mt-14 flex justify-center flex-wrap gap-6">
+                <div class="bg-darkBg flex items-center p-4 w-72 rounded-md transition hover:scale-105">
+                    <i class='bx bx-envelope text-zinc-300'></i>
+                    <p class="text-darkYellow ml-3">parsaes771385@gmail.com</p>
+                </div>
+
+                <div class="bg-darkBg flex items-center p-4 w-72 rounded-md transition hover:scale-105">
+                    <i class='bx bxl-github text-zinc-300'></i>
+                    <p class="text-darkYellow ml-3">parsaes85</p>
+                </div>
+
+                <div class="bg-darkBg flex items-center p-4 w-72 rounded-md transition hover:scale-105">
+                    <i class='bx bx-phone text-zinc-300'></i>
+                    <p class="text-darkYellow ml-3">0901 403 9049</p>
+                </div>
+
+                <div class="bg-darkBg flex items-center p-4 w-72 rounded-md transition hover:scale-105">
+                    <i class='bx bxl-instagram text-zinc-300'></i>
+                    <p class="text-darkYellow ml-3">parsa._es</p>
+                </div>
+
+                <div class="bg-darkBg flex items-center p-4 w-72 rounded-md transition hover:scale-105">
+                    <i class='bx bxl-telegram text-zinc-300'></i>
+                    <p class="text-darkYellow ml-3">@parsa85es</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./Js/script.js"></script>
+</body>
+</html>

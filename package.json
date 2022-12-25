@@ -1,0 +1,16 @@
+{
+  "name": "tailwind-simple-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind -i ./input.css -o ./css/style.css",
+    "watch": "tailwind -i ./input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "parsa",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

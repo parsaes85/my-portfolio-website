@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img-shadow {
+    box-shadow: 3px 3px 0px inset #f98107
+}
+
+@layer components {
+    .btn {
+        @apply bg-yellow text-white py-2 px-10 rounded-full border border-yellow hover:bg-transparent
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+        gap: 1.5rem;
+    }
+}
+
+.outer{
+    width: 100%;
+    height: 5px;
+    background-color: hsl(0, 0%, 50%);
+    position: relative;
+    overflow: hidden;
+}
+.inner{
+    height: 100%;
+    position: absolute;
+    background-color: #26232b;
+}
+
+.card-shadow {
+    box-shadow: 3px 5px 20px #131313;
+}
+
+.personal-blur {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg)
+}
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+    display: none;
+}
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
